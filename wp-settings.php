@@ -141,6 +141,14 @@ if ( is_multisite() ) {
 
 register_shutdown_function( 'shutdown_action_hook' );
 
+
+echo "hello world 123";
+if ( SHORTINIT ) {
+    echo "varibles is true";
+} else {
+echo "varibles is false";
+}
+
 // Stop most of WordPress from being loaded if we just want the basics.
 if ( SHORTINIT ) {
 	return false;
